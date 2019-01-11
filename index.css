@@ -1,0 +1,408 @@
+:root{	
+	--pastel:#F3D250;
+	--gloomy:#FCCD04;
+	--bright:#F9CF00;
+	--comboa:#FEF9C7;
+	--combob:#FCE181;
+	--peach:#FEA680;
+	--tangerine:#F19F4D;
+	--tan:#EEAA7B;
+}
+
+
+@font-face{
+	font-family: c1;
+	src: url(ConcertOne.ttf);
+}
+
+@font-face{
+	font-family: nunito;
+	src: url(Nunito.ttf);
+}
+
+@font-face{
+	font-family: oswald;
+	src: url(Oswald.ttf);
+}
+
+@font-face{
+	font-family: wsans;
+	src: url(WorkSans.ttf);
+}
+
+@font-face{
+	font-family: ssans;
+	src: url(SourceSans.ttf);
+}
+
+body,html {
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+div{
+	width: 100%;
+	min-width: 1000px;
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.fa-list-ul {
+	position: sticky;
+	color: var(--combob);
+	font-size: 50px;
+	z-index: 3;
+	top: 10px;
+	left: 10px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	
+}
+
+i ul {
+	list-style: none;
+	position: absolute;
+	top: 0%;
+	right: -10px;
+	text-align: left;
+	
+}
+
+.fa-list-ul:hover {
+	cursor:pointer;
+}
+
+i ul a {
+	text-decoration: none;
+	font-size: 20px;
+	color: var(--combob);
+}
+
+i ul li {
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+#main {
+	margin-top: 0;
+	height: 750px;
+	background-image:url(bboard.jpg);
+	background-repeat: no-repeat;
+}
+
+#main h1 {
+	font-size: 100px;
+	padding-top: 150px;
+	margin:0;
+	margin-bottom: -90px;
+	font-family: KALAM;
+	color: white;
+}
+
+#main li {
+	display: inline-block;
+}
+
+#teacher {
+	font-size: 50px;
+	list-style: none;
+	line-height: 100px;
+}
+
+#teacher li{
+	margin-top: 30px;
+	color: var(--comboa);
+	letter-spacing: 20px;
+}
+
+#nav {
+	font-family: nunito;
+	position: relative;
+}
+
+#nav li {
+	margin-right: 25px;
+	font-size: 25px;
+	margin-top: 100px;
+	position: relative;
+}
+
+#nav a {
+	text-decoration: none;
+	color: var(--combob);
+	
+}
+
+@keyframes down {
+	0% {
+		display:none;
+		opacity: 0;
+	}
+
+	100%{
+		display:block;
+		opacity: 1;
+	}
+}
+
+#nav a::after{
+	color: var(--pastel);
+	opacity: 1;
+	display: none;
+	position: absolute;
+	text-align: center;
+	font-size: 20px;
+	left: 47%;
+	
+}
+
+#nav a:hover::after{
+	display:block;
+	animation: down 500ms ease-in-out forwards; 
+}
+
+.WHO::after{
+	content: "BIOGRAPHY";
+}
+
+.WHAT::after{
+	content: "PHILOSOPHY";
+}
+
+.WHEN::after{
+	content: "SCHEDULE";
+}
+
+.WHERE::after{
+	content: "CONTACT";
+}
+
+.WHY::after{
+	content: "REASON";
+}
+
+.HOW::after{
+	content: "METHODOLOGY";
+}
+
+i ul a::after {
+	display: none;
+}
+
+#why, #how, #where{
+	background-color: var(--comboa);
+	height: 400px;
+}
+
+.writing p {
+	text-align: center;
+	font-size: 25px;
+	font-family: wsans;
+}
+
+.writing a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.writing {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.writing img {
+	border-radius: 20px;
+	height: 400px;
+	float: left;
+	margin-right: 30px;
+}
+
+.writing h3{
+	font-family: ssans;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.section h1 {
+	font-family: ssans;
+	font-size: 50px;
+	word-spacing: 10px;
+	letter-spacing: 10px;
+	padding-top: 30px;
+	margin:30px 0;
+	color: var(--pastel);
+}
+
+#who {
+	height: 550px;
+}
+
+#who p {
+	padding-top: 30px;
+	text-align: left;
+}
+
+#resume, #aboutme, #awards{
+	text-decoration: none;
+	font-size: 30px;
+	font-family: nunito;
+	color: var(--pastel);
+	float: left;
+}
+
+#aboutme {
+	float: right;
+}
+
+#awards{
+	float: none;
+}
+
+#why {
+	height: 500px;
+}
+
+#why h3{
+	margin-bottom: 0;
+	margin-top: 10px;
+	font-family: wsans;
+}
+
+#what {
+	height: 650px;
+}
+
+#how{
+	height: 1050px;
+}
+
+#how p {
+	font-family: wsans;
+	font-size: 25px;
+}
+
+#when {
+	height: 650px;
+}
+
+#when img{
+	width: 1000px;
+	margin-top: 30px;
+}
+
+#otherContacts{
+	text-align: center;
+	margin-top: 40px;
+}
+
+#otherContacts li{
+	list-style: none;
+	display: inline-block;
+	vertical-align: bottom;
+	position: relative;
+	text-align: center;
+}
+
+#otherContacts i {
+	margin-top: 100px;
+	padding-right: 30px;
+	font-size: 50px;
+	text-align: center;
+	color: var(--pastel);
+}
+
+@keyframes down {
+	0% {
+		transform: rotateY(-90deg) translateY(-30px);
+	}
+
+	100%{
+		transform: rotateY(0deg) translateY(0px);
+	}
+}
+
+#socialmedia i::after{
+	color:black;
+	
+}
+
+.fa-envelope::after{
+	content: 'akakimmykim@gmail.com';
+	font-size: 20px;
+	padding: 10px;
+	display: none;
+	width: 11em;
+	height: 40;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -60px;
+	left: -20px;
+}
+
+.fa-envelope:hover::after{
+	display: block;
+	animation: down 500ms ease-in-out forwards; 
+}
+
+.fa-linkedin::after{
+	content: 'www.linkedin.com/in/theRealAndrewKim';
+	font-size: 20px;
+	padding: 10px;
+	display: none;
+	width: 18em;
+	height: 40;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -60px;
+	left: -150px;
+}
+
+.fa-linkedin:hover::after{
+	display: block;
+	animation: down 500ms ease-in-out forwards; 
+}
+
+.fa-github::after{
+	content: 'https://github.com/akakimmykim';
+	font-size: 20px;
+	padding: 10px;
+	display: none;
+	width: 15em;
+	height: 40;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -60px;
+	left: -180px;
+}
+
+.fa-github:hover::after{
+	display: block;
+	animation: down 500ms ease-in-out forwards; 
+}
+
+.fa-facebook::after{
+	content: 'www.facebook.com/andrew.kim.5667';
+	font-size: 20px;
+	padding: 10px;
+	display: none;
+	width: 15em;
+	height: 40;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -60px;
+	left: -250px;
+}
+
+.fa-facebook:hover::after{
+	display: block;
+	animation: down 500ms ease-in-out forwards; 
+}
