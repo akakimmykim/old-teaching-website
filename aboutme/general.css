@@ -1,0 +1,77 @@
+:root{	
+	--pastel:#F3D250;
+	--gloomy:#FCCD04;
+	--bright:#F9CF00;
+	--comboa:#FEF9C7;
+	--combob:#FCE181;
+	--peach:#FEA680;
+	--tangerine:#F19F4D;
+	--tan:#EEAA7B;
+}
+
+
+@font-face{
+	font-family: c1;
+	src: url(../ConcertOne.ttf);
+}
+
+@font-face{
+	font-family: nunito;
+	src: url(../Nunito.ttf);
+}
+
+@font-face{
+	font-family: oswald;
+	src: url(../Oswald.ttf);
+}
+
+@font-face{
+	font-family: wsans;
+	src: url(../WorkSans.ttf);
+}
+
+@font-face{
+	font-family: ssans;
+	src: url(../SourceSans.ttf);
+}
+
+body,html {
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+div{
+	width: 100%;
+	min-width: 1000px;
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	height: 100%;
+}
+
+#nav ul{
+	list-style: none;
+	margin: 0;
+}
+
+#nav a {
+	text-decoration: none;
+	margin: 10px 15px;
+	display: inline-block;
+	color: var(--bright);
+	font-size: 20px;
+	font-family: wsans;
+	transition: color 300ms ease-in-out;
+}
+
+#nav a:hover{
+	color: var(--tan);
+	transition: color 300ms ease-in-out;
+}

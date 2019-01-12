@@ -247,25 +247,19 @@ i ul a::after {
 }
 
 #who p {
-	padding-top: 30px;
+	padding-top: 0px;
 	text-align: left;
 }
 
-#resume, #aboutme, #awards{
+#resume, #aboutme, #awards, #projects, #imp, #blog,#bio{
 	text-decoration: none;
 	font-size: 30px;
 	font-family: nunito;
 	color: var(--pastel);
 	float: left;
+	margin-right: 50px;
 }
 
-#aboutme {
-	float: right;
-}
-
-#awards{
-	float: none;
-}
 
 #why {
 	height: 500px;

@@ -19,7 +19,7 @@ $(document).ready(function(){
 	
 	$("i ul a").hide();
 	$(".fa-list-ul").click(function(){
-		$("i ul a").toggle	(500);
+		$("i ul a").toggle(500);
 	
 	});
 	
