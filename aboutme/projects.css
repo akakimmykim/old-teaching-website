@@ -1,3 +1,106 @@
+
+#header{
+	margin-top: 50px;
+	width: 1000px;
+	height: 500px;
+	font-size: 60px;
+	font-family: nunito;
+}
+
+#header li{
+	display: inline-block;
+	color: var(--bright);
+}
+
+@keyframes rollIn {
+   0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); }
+   100% { opacity: 1; transform: translateX(0px) rotate(0deg); } 
+} 
+
+@keyframes rollIn2 {
+   0% { opacity: 0; transform: translateX(100%) rotate(120deg); }
+   100% { opacity: 1; transform: translateX(0px) rotate(0deg); } 
+} 
+
+@keyframes rollUp {
+  0% {
+    transform: translateY(200px);
+	opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+	opacity: 1;
+  }
+}
+
+@keyframes rollDown {
+  0% {
+    transform: translateY(-200px);
+	opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+	opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%{
+	  opacity: 0;
+  }
+  
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+  100%{
+	  opacity: 1;
+  }
+}
+
+#p {
+	animation: rollIn 1.5s ease-in-out forwards;
+}
+
+#r{
+	animation: rollUp 1s ease-in-out forwards;
+}
+
+#o{
+	animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+#j{
+	animation: rollDown 1s ease-in-out forwards;
+}
+
+#e{
+	animation: rollUp 1s ease-in-out forwards;
+}
+
+#c{
+	animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+#t{
+	animation: rollDown 1s ease-in-out forwards;
+}
+
+#s{
+	animation: rollIn2 1.5s ease-in-out forwards;
+}
+
 #ongoing{
 	background-color: var(--comboa);
 	height: 1400px;
